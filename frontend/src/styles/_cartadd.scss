@@ -1,0 +1,54 @@
+.data_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+  
+  }
+
+  #alojamiento-title{
+    color: $dark-moss-green;
+    font-size: 1em;
+  }
+
+  .hotel__label{
+    font-size: 0.8em;
+    color: black;
+  }
+  
+  .category_data{
+    font-size: larger;
+    font-weight: bolder;
+    color: $dark-moss-green;
+  }
+  
+  .price-filter{
+    margin-left: 2vw;
+  }
+  
+  .titulo-reserva{
+    color: black;
+  }
+  
+  .cart-button {
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .closeModal{
+    margin-left: 3vw;
+  }
+
+  .backto-alojamientos{
+    text-align: center;
+    width: 100%;
+    margin-right: 75vw;
+  }

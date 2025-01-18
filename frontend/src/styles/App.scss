@@ -1,0 +1,65 @@
+@import 'header';
+@import 'colors';
+@import 'listing';
+@import 'cartadd' ;
+@import 'queries';
+
+*{
+  caret-color: transparent;
+}
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins';
+  }
+
+  body{
+    background-color: white;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  
+  li{
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .alojamiento-container{
+    margin-right: 10vw;
+  }
+  
+
+  
+  .cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+  }
+  
+  .cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #button-delete {
+    background-color: #be2727;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #button-delete:hover {
+    background-color: #ffffff;
+    color: #be2727;
+  }
+  

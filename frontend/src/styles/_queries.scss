@@ -1,0 +1,55 @@
+@import 'colors';
+@import 'header';
+@import 'listing';
+@import 'cartadd';
+
+@media (min-width: 575px) {
+    .header{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    }
+
+    #logo{
+        font-size: 5em;
+        margin-left: 10vw;
+    }
+
+    .price-filter, .continent-filter{
+        font-size: 1em;
+    }
+
+    input{
+        width: 35vw;
+        height: 5vh;
+        border: none;
+    
+    
+        &::placeholder{
+            text-align: center;
+            color: $english-violet;
+            font-family: 'Poppins';
+            font-weight: 600;
+    
+        }
+    }
+
+    .container-listing{
+        margin-left: 10%;
+        display: flex;
+    }
+
+    #listing{
+        margin-left: 10%;
+
+    }
+
+    .alojamiento-container{
+        margin-left: 7vw;
+      }
+  }
