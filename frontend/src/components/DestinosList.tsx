@@ -29,6 +29,7 @@ const DestinosList: React.FC = () => {
   useEffect(() => {
     const fetchDestinos = async () => {
       try {
+        console.log('API URL:', process.env.REACT_APP_API_URL);
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/destinos`);
         const data = response.data.map((destino: any) => ({
           ...destino,
