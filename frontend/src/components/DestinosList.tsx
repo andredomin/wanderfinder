@@ -88,8 +88,8 @@ const DestinosList: React.FC = () => {
     <div>
       <ul id='listing'>
         {filteredDestinos.map((destino) => (
-          <li key={destino.id} onClick={() => handleDestino(destino.id)} style={{ marginBottom: '20px' }}>
-            <h2>{destino.nombre}</h2>
+          <li key={destino.id} style={{ marginBottom: '20px' }}>
+            <h2 onClick={() => handleDestino(destino.id)}>{destino.nombre}</h2>
             <p>{destino.descripcion}</p>
             <p><strong>Categorías:</strong> {destino.categoria.join(', ')}</p>
             <p><strong>Ubicación:</strong> {destino.ubicacion}</p>
