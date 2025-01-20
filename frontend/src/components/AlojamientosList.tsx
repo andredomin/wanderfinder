@@ -33,7 +33,7 @@ const AlojamientosList: React.FC = () => {
     
     if (id) {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/api/alojamientos/${id}`)
+      .get(`${import.meta.env.VITE_API_URL}/api/alojamientos/${id}`)
       .then((response) => {
         setAlojamientos(response.data);
         setLoading(false);
