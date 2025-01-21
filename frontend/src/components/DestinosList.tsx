@@ -26,6 +26,7 @@ const DestinosList: React.FC = () => {
   const handleDestino = (id: string) => {
     navigate(`/alojamientos/${id}`);
   };
+  console.log('API URL:', import.meta.env.VITE_API_URL);
   useEffect(() => {
     const fetchDestinos = async () => {
       try {
