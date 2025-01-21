@@ -8,7 +8,6 @@ interface CartButtonProps {
 
 const CartButton: React.FC<CartButtonProps> = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -16,6 +15,8 @@ const CartButton: React.FC<CartButtonProps> = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  
 
   return (
     <div>
